@@ -1,5 +1,5 @@
 baseURL = "https://amigageek.com/"
 disableHugoGeneratorInject = true
-disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
+disableKinds = ["sitemap", "taxonomy"]
 #enableGitInfo = true
 pygmentsUseClasses = true

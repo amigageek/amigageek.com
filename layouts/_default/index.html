@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
+<h1>Projects</h1>
+<p>
+    <a href="/modsurfer/">ModSurfer</a> - A rhythm game for the Amiga written in six months
+</p>
 <h1>Recent posts</h1>
 <table id="posts">
-  {{ range (where .Site.RegularPages "Section" "posts" )}}
-  <tr>
-    <td>{{ .Lastmod.Format "2006-01-02" }}</td>
-    <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
-  </tr>
-  {{ end }}
+    {{ range (where .Site.RegularPages "Section" "posts" )}}
+    <tr>
+        <td>{{ .Lastmod.Format "2006-01-02" }}</td>
+        <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+    </tr>
+    {{ end }}
 </table>
 {{ partial "footer.html" . }}
