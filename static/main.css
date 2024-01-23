@@ -54,7 +54,7 @@ article {
     padding: 0.7em 0;
 }
 
-#posts {
+.homelinks {
     margin: 5px -15px -5px -15px;
     border-spacing: 15px 5px;
     border-collapse: separate;
