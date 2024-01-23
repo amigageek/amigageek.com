@@ -1,10 +1,15 @@
 {{ partial "header.html" . }}
 <h1>Projects</h1>
-<p>
-    <a href="/modsurfer/">ModSurfer</a> - A rhythm game for the Amiga written in six months
-</p>
+<table class="homelinks">
+    <tr>
+        <td><a href="/modsurfer/">ModSurfer</a></td><td>Rhythm game for MOD music written in six months</td>
+    </tr>
+    <tr>
+        <td><a href="/tabgroup.mcc/">TabGroup.mcc</a></td><td>MUI Group class with dynamic pages and tabs</td>
+    </tr>
+</table>
 <h1>Recent posts</h1>
-<table id="posts">
+<table class="homelinks">
     {{ range (where .Site.RegularPages "Section" "posts" )}}
     <tr>
         <td>{{ .Lastmod.Format "2006-01-02" }}</td>
