@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>TabGroup.mcc | Amiga Geek</title>
+    <meta name="description" content="Antiquated adventures of a nostalgic engineer">
+    <link rel="stylesheet" href="/main.css" type="text/css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body bgcolor="#151520" text="#D0D0D0" link="#3391FF" alink="#3391FF" vlink="#3391FF">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="vspace" height="10"></td>
+      </tr>
+    </table>
+    <table class="page" align="center" width="400" bgcolor="#242435" cellspacing="10" cellpadding="0">
+      <tr>
+        <td>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><a href="/"><img class="logo" align="middle" src="/boing.png" width="32" height="32"></a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="/">Home</a></td>
+                  </tr>
+                </table>
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><a href="/index.xml">RSS</a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="https://github.com/amigageek/">GitHub</a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="mailto:djay@amigageek.com">Email</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="hrule" height="1" bgcolor="#383860"></td>
+      </tr>
+      <tr>
+        <td class="content">
+          <p class="heading"><font size="+2"><b>TabGroup.mcc</b></font></p>
+          <p>Last updated: 22nd January 2024</p>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="vspace" height="10"></td>
+            </tr>
+            <tr>
+              <td class="hrule" height="1" bgcolor="#383860"></td>
+            </tr>
+          </table>
+          <center><div class="image"><img src="tabgroup.png" width="256" height="239"></div></center>
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="vspace" height="10"></td>
+            </tr>
+            <tr>
+              <td class="hspace2" width="20"></td>
+              <td>
+                <b>TabGroup.mcc is a MUI custom class which provides a page group with tab headings. Pages can be added, removed, and renamed. Tabs can be reordered with drag-and-drop.</b>
+              </td>
+              <td class="hspace2" width="20"></td>
+            </tr>
+          </table>
+          <p>In an upcoming project I am building a <a href="https://en.wikipedia.org/wiki/Magic_User_Interface">MUI</a> application which manages one document per tab. I prefer this design to managing documents in separate windows.</p>
+          <p>MUI provides a Group subclass called Register which displays each of its children on a separate page. The group has a strip of tabs along the top to identify and change pages.</p>
+          <p>Register would be a good fit were it not for one problem: the set of pages is static. As the user opens and closes documents I need to add and remove pages. This was resolved in a later version of MUI but classic Amigas generally run MUI 3.8. Later builds targeted <a href="https://en.wikipedia.org/wiki/PowerPC">PPC</a> and <a href="https://en.wikipedia.org/wiki/Retargetable_graphics">RTG</a> for acceptable performance.</p>
+          <p>TabGroup.mcc to the rescue! Thanks to the extensibility of MUI, and to the <a href="https://en.wikipedia.org/wiki/BOOPSI">BOOPSI</a> foundation that it builds upon, I was able to adapt the Group class to fit my needs. Here is a summary of improvements I've made:</p>
+          <ul>
+            <li>Tabs can be added, removed, renamed, and dragged/dropped</li>
+            <li>Display one page per tab, or the same page on all tabs</li>
+            <li>Mimics the look and feel of the Register class</li>
+            <li>User preferences for tab size, padding, font, and background</li>
+          </ul>
+          <p>User preferences are implemented as a MUI settings module:</p>
+          <center><div class="image"><img src="prefs.png" width="353" height="300"></div></center>
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="vspace" height="10"></td>
+            </tr>
+            <tr>
+              <td class="hspace2" width="20"></td>
+              <td>
+                <b>A number of options are available to customize the group and its tabs. By default TabGroup.mcc follows the Register class style.</b>
+              </td>
+              <td class="hspace2" width="20"></td>
+            </tr>
+          </table>
+          <p>TabGroup.mcc will be released on Aminet once I have finished testing it. For now the source code and binary package are <a href="https://github.com/amigageek/mcc_tabgroup">available on GitHub</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="vspace" height="10"></td>
+      </tr>
+    </table>
+    <a name="end"></a>
+  </body>
+</html>
