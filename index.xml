@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Amiga Geek</title>
+    <link>https://amigageek.com/</link>
+    <description>Antiquated adventures of a nostalgic engineer</description>
+    <item>
+      <title>Website publishing on the Amiga</title>
+      <link>https://amigageek.com/posts/website-publishing-on-the-amiga/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 UTC</pubDate>
+      <description>This website is now created with Amiga software and is optimized for display in IBrowse at 640x480 or higher resolution.</description>
+    </item>
+    <item>
+      <title>Artwork</title>
+      <link>https://amigageek.com/artwork/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 UTC</pubDate>
+      <description>Pictures and animations created with Amiga software</description>
+    </item>
+    <item>
+      <title>TabGroup.mcc</title>
+      <link>https://amigageek.com/tabgroup.mcc/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 UTC</pubDate>
+      <description>MUI Group class with dynamic pages and tabs</description>
+    </item>
+    <item>
+      <title>Registering Magic User Interface</title>
+      <link>https://amigageek.com/posts/registering-magic-user-interface/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 UTC</pubDate>
+      <description>Magic User Interface (MUI) is a GUI toolkit for the Amiga which saw widespread use throughout the mid-90s and 2000s. It improved on GadTools with automatic layout, visual customization, keyboard control, context-sensitive help, and a large set of extensible GUI components.</description>
+    </item>
+    <item>
+      <title>Rendering a Boing Ball in Lightwave 3D</title>
+      <link>https://amigageek.com/posts/rendering-a-boing-ball-in-lightwave-3d/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 UTC</pubDate>
+      <description>I recently found myself in need of an Amiga-inspired avatar. The Boing Ball seemed an obvious choice. Made famous by a 1984 CES demo, the Boing Ball set the scene for Amiga's dominance in real-time graphics and OS multitasking. Here's a short deconstruction of how the effect worked.</description>
+    </item>
+    <item>
+      <title>Writing a game for the Commodore Amiga</title>
+      <link>https://amigageek.com/posts/writing-a-game-for-the-commodore-amiga/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 UTC</pubDate>
+      <description>ModSurfer (video) was my entry to the 2018 English Amiga Board game development competition. This six month contest rode a wave of renewed interest in the Commodore Amiga, a series of computers which originated in the 1980s and succeeded the very popular 8-bit Commodore 64.</description>
+    </item>
+    <item>
+      <title>ModSurfer</title>
+      <link>https://amigageek.com/modsurfer/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 UTC</pubDate>
+      <description>Rhythm game for MOD music written in six months</description>
+    </item>
+  </channel>
+</rss>

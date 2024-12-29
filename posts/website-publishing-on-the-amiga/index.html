@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Website publishing on the Amiga | Amiga Geek</title>
+    <meta name="description" content="Antiquated adventures of a nostalgic engineer">
+    <link rel="stylesheet" href="/main.css" type="text/css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body bgcolor="#151520" text="#D0D0D0" link="#3391FF" alink="#3391FF" vlink="#3391FF">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="vspace" height="10"></td>
+      </tr>
+    </table>
+    <table class="page" align="center" width="400" bgcolor="#242435" cellspacing="10" cellpadding="0">
+      <tr>
+        <td>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><a href="/"><img class="logo" align="middle" src="/boing.png" width="32" height="32"></a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="/">Home</a></td>
+                  </tr>
+                </table>
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><a href="/index.xml">RSS</a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="https://github.com/amigageek/">GitHub</a></td>
+                    <td class="hspace" width="10"></td>
+                    <td><a href="mailto:djay@amigageek.com">Email</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="hrule" height="1" bgcolor="#383860"></td>
+      </tr>
+      <tr>
+        <td class="content">
+          <p class="heading"><font size="+2"><b>Website publishing on the Amiga</b></font></p>
+          <p>Last updated: 16th December 2024</p>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="vspace" height="10"></td>
+            </tr>
+            <tr>
+              <td class="hrule" height="1" bgcolor="#383860"></td>
+            </tr>
+          </table>
+          <center><div class="image"><img src="workflow.png" width="320" height="200"></div></center>
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="vspace" height="10"></td>
+            </tr>
+            <tr>
+              <td class="hspace2" width="20"></td>
+              <td>
+                <b>Markdown editing in TextEdit (left) with a live preview in IBrowse (right). Pressing F1 refreshes the HTML preview.</b>
+              </td>
+              <td class="hspace2" width="20"></td>
+            </tr>
+          </table>
+          <p>This website is now created with Amiga software and is optimized for display in <a href="http://www.ibrowse-dev.net/">IBrowse</a> at 640x480 or higher resolution.</p>
+          <p>The original website was published with the <a href="https://gohugo.io/">Hugo</a> static site generator. It targeted HTML 5 with CSS at 1920x1080 resolution. Pages were served by Cloudflare over HTTPS. Cloudflare's network filtering additionally required modern Javascript in some cases.</p>
+          <p>This design led to poor compatibility and performance on classic Amigas. I have addressed this through a number of changes:</p>
+          <ul>
+            <li>Website is now authored with <a href="https://github.com/amigageek/amigageek-publisher">Amiga Geek Publisher</a> on AmigaOS</li>
+            <li>Source language is a Markdown subset</li>
+            <li>Compatibility target is HTML 4 Transitional without CSS at 640x480</li>
+            <li>Pages are served over HTTP and HTTPS by a VPS</li>
+          </ul>
+          <p>It is now quite usable on classic Amigas with IBrowse. CSS is optionally provided for newer browsers to show a similar layout at higher resolutions.</p>
+          <p>Amiga Geek Publisher has a few neat features:</p>
+          <ul>
+            <li>Live preview of pages edited  in TextEdit via ARexx</li>
+            <li>Browser refreshed when rebuilding a page via <a href="http://aminet.net/package/comm/www/OpenURL-7.18">OpenURL</a></li>
+            <li>Index and RSS feed are generated automatically</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="vspace" height="10"></td>
+      </tr>
+    </table>
+    <a name="end"></a>
+  </body>
+</html>
