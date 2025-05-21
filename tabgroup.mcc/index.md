@@ -4,6 +4,12 @@ Date: 2024-01-22
 Description: MUI Group class with dynamic pages and tabs
 ---
 
+Aminet: [dev/mui/MCC_TabGroup](http://aminet.net/package/dev/mui/MCC_TabGroup)
+
+GitHub: [amigageek/mcc_tabgroup](https://github.com/amigageek/mcc_tabgroup)
+
+***
+
 ![TabGroup.mcc is a MUI custom class which provides a page group with tab headings. Pages can be added, removed, and renamed. Tabs can be reordered with drag-and-drop.](tabgroup.png)
 
 In an upcoming project I am building a [MUI](https://en.wikipedia.org/wiki/Magic_User_Interface) application which manages one document per tab. I prefer this design to managing documents in separate windows.
@@ -22,5 +28,3 @@ TabGroup.mcc to the rescue! Thanks to the extensibility of MUI, and to the [BOOP
 User preferences are implemented as a MUI settings module:
 
 ![A number of options are available to customize the group and its tabs. By default TabGroup.mcc follows the Register class style.](prefs.png)
-
-TabGroup.mcc will be released on Aminet once I have finished testing it. For now the source code and binary package are [available on GitHub](https://github.com/amigageek/mcc_tabgroup).
