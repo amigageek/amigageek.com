@@ -22,7 +22,7 @@
               <td>
                 <table cellspacing="0" cellpadding="0">
                   <tr>
-                    <td><a href="/"><img class="logo" align="middle" src="/logo.png" width="180" height="32"></a></td>
+                    <td><a href="/"><img style="content: url(/logo.png); width: 341px; height: 64px" align="middle" src="/logo_half.png" width="171" height="32"></a></td>
                   </tr>
                 </table>
               </td>
@@ -58,7 +58,11 @@
               <td class="hrule" height="1" bgcolor="#383860"></td>
             </tr>
           </table>
-          <center><div class="image"><img src="boingball.png" width="228" height="228"></div></center>
+          <center>
+            <div class="image" style="content: url(boingball.png); width: 456px; height: 456px">
+              <img src="boingball_half.png" width="228" height="228">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -75,7 +79,11 @@
           <p>Briefly revisiting the venerable Amiga ray tracer Imagine 3D, the nostalgia was strong. My younger self spent many hours modeling, texturing, and rendering scenes in Imagine. The user interface was not very intuitive, though. I decided to try something a little more modern.</p>
           <p class="heading"><font size="+2"><b>Lightwave 3D</b></font></p>
           <p>Newtek's Lightwave 3D was a ray tracing package originally shipped with their popular <a href="https://arstechnica.com/gadgets/2016/03/a-history-of-the-amiga-part-9-the-video-toaster/">Video Toaster</a> hardware. The Toaster was expensive and required a powerful Amiga, mostly limiting its use to professional users of the time. Emulation has made this tool much more accessible to retro enthusiasts.</p>
-          <center><div class="image"><img src="sysinfo.png" width="350" height="176"></div></center>
+          <center>
+            <div class="image" style="content: url(sysinfo.png); width: 700px; height: 352px">
+              <img src="sysinfo_half.png" width="350" height="176">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -107,7 +115,11 @@ jit_compiler = 1</font></pre>
           <p>I installed the Lightwave package <b>LW50r_Incl.CDContent.lha</b> and downloaded the manual <b>Video.Toaster.4000_LW5-Manual.pdf</b>. Both of these can be found on the EAB FTP.</p>
           <p>Lightwave consists of two separate programs: Modeler and Layout. I started out in Modeler to create the Boing Ball mesh.</p>
           <p class="heading"><font size="+2"><b>Modeler</b></font></p>
-          <center><div class="image"><img src="modeler.png" width="336" height="273"></div></center>
+          <center>
+            <div class="image" style="content: url(modeler.png); width: 672px; height: 546px">
+              <img src="modeler_half.png" width="336" height="273">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -124,7 +136,11 @@ jit_compiler = 1</font></pre>
           <p>I clicked the button conveniently named Ball and drew out a square in the top and side views with Ctrl-Click-Drag. The Numeric button pops up a window to set the number of sides and vertical segments. I set these to 100 to get a reasonably spherical mesh. I could not find an option for non-polygonal spheres.</p>
           <p>Our brief stop by the Modeler is complete. The object can now be saved out for loading into the Layout program.</p>
           <p class="heading"><font size="+2"><b>Layout</b></font></p>
-          <center><div class="image"><img src="layout.png" width="336" height="273"></div></center>
+          <center>
+            <div class="image" style="content: url(layout.png); width: 672px; height: 546px">
+              <img src="layout_half.png" width="336" height="273">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -139,7 +155,11 @@ jit_compiler = 1</font></pre>
           </table>
           <p>Positioning objects, lighting, texturing, and rendering are all done in the Layout program. This has a reasonably intuitive interface with a few quirks. Notably, saving the "scene" does not save all of the state. Surfaces and objects must also be saved separately.</p>
           <p>I started by placing the camera very close to the ball and expanding its field of view. I wanted a slightly distorted look to match the original demo. Next I changed the default light source to a spotlight and aimed it at the ball. Aligning this was tricky. In hindsight a point light source might have sufficed.</p>
-          <center><div class="image"><img src="texture.png" width="320" height="256"></div></center>
+          <center>
+            <div class="image" style="content: url(texture.png); width: 640px; height: 512px">
+              <img src="texture_half.png" width="320" height="256">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -153,7 +173,11 @@ jit_compiler = 1</font></pre>
             </tr>
           </table>
           <p>I created a checkerboard texture for the ball in Personal Paint. This texture is loaded into Layout through the Images menu and applied to an object through the Surfaces menu. Surfaces define how objects interact with light sources. Here, we can also adjust the texture size, alignment, and wrapping.</p>
-          <center><div class="image"><img src="surfaces.png" width="336" height="273"></div></center>
+          <center>
+            <div class="image" style="content: url(surfaces.png); width: 672px; height: 546px">
+              <img src="surfaces_half.png" width="336" height="273">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -169,7 +193,11 @@ jit_compiler = 1</font></pre>
           <p>Once things were roughly set up I was ready to preview the render. On a real Amiga you would normally render at a low resolution for this step. In an emulator we can render this scene at full resolution in just a couple of seconds. Very handy! I dialled back antialiasing as this is a little slow for previews.</p>
           <p>Previews are shown in 8-bit <a href="https://en.wikipedia.org/wiki/Hold-And-Modify">HAM mode</a> by default. If you're unfamiliar with HAM mode it can take a little practice to separate fringing artifacts from the underlying picture. I was OK with this, but if you configure emulation for Picasso II display then Lightwave should be able to preview in full 24-bit color.</p>
           <p>Next I spent an hour or two experimenting with the settings to get the picture just right. This was mostly due to my lack of experience with ray tracing. Once I was happy with the result I set up the final render to disk. Lightwave has a suite of features for creating animations, but I just needed a single frame.</p>
-          <center><div class="image"><img src="record.png" width="336" height="273"></div></center>
+          <center>
+            <div class="image" style="content: url(record.png); width: 672px; height: 546px">
+              <img src="record_half.png" width="336" height="273">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>

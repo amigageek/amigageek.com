@@ -7,7 +7,7 @@ Date: 2024-12-16
 
 This website is now created with Amiga software and is optimized for display in [IBrowse](http://www.ibrowse-dev.net/) at 640x480 or higher resolution.
 
-The original website was published with the [Hugo](https://gohugo.io/) static site generator. It targeted HTML 5 with CSS at 1920x1080 resolution. Pages were served by Cloudflare over HTTPS. Cloudflare's network filtering additionally required modern Javascript in some cases.
+The original website was published with the [Hugo](https://gohugo.io/) static site generator. It targeted HTML 5 with CSS at 1920x1080 resolution. Pages were served by Cloudflare over HTTPS. Cloudflare's network filtering additionally required modern Javascript in some cases.
 
 This design led to poor compatibility and performance on classic Amigas. I have addressed this through a number of changes:
 
