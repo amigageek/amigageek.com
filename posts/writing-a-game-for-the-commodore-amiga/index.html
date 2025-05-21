@@ -22,7 +22,7 @@
               <td>
                 <table cellspacing="0" cellpadding="0">
                   <tr>
-                    <td><a href="/"><img class="logo" align="middle" src="/logo.png" width="180" height="32"></a></td>
+                    <td><a href="/"><img style="content: url(/logo.png); width: 341px; height: 64px" align="middle" src="/logo_half.png" width="171" height="32"></a></td>
                   </tr>
                 </table>
               </td>
@@ -58,7 +58,11 @@
               <td class="hrule" height="1" bgcolor="#383860"></td>
             </tr>
           </table>
-          <center><div class="image"><img src="modsurfer.png" width="320" height="263"></div></center>
+          <center>
+            <div class="image" style="content: url(modsurfer.png); width: 640px; height: 526px">
+              <img src="modsurfer_half.png" width="320" height="263">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -76,7 +80,11 @@
           <p><a href="https://github.com/amigageek/modsurfer">Source code</a> is available for the curious.</p>
           <p class="heading"><font size="+2"><b>Development environment</b></font></p>
           <p>The <a href="https://github.com/bebbo/amiga-gcc">amiga-gcc</a> cross-compiler, a fork of gcc with a m68k-amigaos backend, is used for C compiling and linking. C proved to be a productive choice for most of the game logic. Performance critical code was written in assembly using the <a href="http://sun.hasenbraten.de/vasm/">VASM</a> cross-assembler (included with amiga-gcc). VASM has a more ergonomic macro language than GAS, though I also used the latter for some inline assembly. The build system is implemented with a <a href="https://github.com/amigageek/modsurfer/blob/master/Makefile">Makefile</a>.</p>
-          <center><div class="image"><img src="devenv.jpg" width="350" height="197"></div></center>
+          <center>
+            <div class="image" style="content: url(devenv.jpg); width: 700px; height: 394px">
+              <img src="devenv_half.jpg" width="350" height="197">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -97,7 +105,11 @@
           <p>ModSurfer was inspired by the PC game <a href="https://store.steampowered.com/app/12900/AudioSurf/">AudioSurf</a>, which constructs a 3D track from an MP3 file with visual elements synchronized to sounds. The player moves left/right across three lanes, trying to hit the visual elements to score points. AudioSurf performs audio analysis on the MP3 file to construct its track.</p>
           <p>The MP3 format is too large and processor intensive to play on a base Amiga 500 (although it is playable on accelerated Amigas). Instead, most Amiga music is composed in the <a href="https://en.wikipedia.org/wiki/MOD_(file_format)">MOD</a> format. MOD is the oldest file format in the "tracker" family. Tracked music separates the audio data into short, reusable instrument samples. Timing data and effects are used to construct a song.</p>
           <p>This data separation has some key advantages for the game. The same set of audio samples are reused throughout the song, with resampling and effects applied. This limits the amount of audio data that needs to be analyzed. In addition, timing information for every instrument is encoded in the music module.</p>
-          <center><div class="image"><img src="protracker.png" width="320" height="255"></div></center>
+          <center>
+            <div class="image" style="content: url(protracker.png); width: 640px; height: 510px">
+              <img src="protracker_half.png" width="320" height="255">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -115,7 +127,11 @@
           <p>The ambitious plan I set out at the beginning of the six month development period could be summarized as: identify the lead instrument in each pattern, generate visuals synchronized with the instrument, and silence the instrument if the player is in the wrong lane when the instrument plays.</p>
           <p class="heading"><font size="+2"><b>The menu</b></font></p>
           <p>The frontend of the game lets the user select a MOD file to play from their filesystem (floppy or hard disk). Amiga OS has a sophisticated (for its time) GUI subsystem called <a href="https://en.wikipedia.org/wiki/Intuition_(Amiga)">Intuition</a>. Later revisions of the OS supported quite elaborate GUI toolkits. The base Amiga 500, however, has a fairly limited one. I decided to go old-school and create a GUI from scratch, using graphics and input events.</p>
-          <center><div class="image"><img src="menu.png" width="346" height="270"></div></center>
+          <center>
+            <div class="image" style="content: url(menu.png); width: 692px; height: 540px">
+              <img src="menu_half.png" width="346" height="270">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -186,7 +202,11 @@ custom.bltsize = (copy_h << BLTSIZE_H0_SHF) | width_words;</font></pre>
           <p>Pitch is more challenging. There are two factors to consider: the frequencies in the sample data, and the sample rates chosen in the pattern.</p>
           <p>Resampling is an Amiga hardware feature which allows the pitch of an instrument to be shifted up or down. This is how different notes (typically within an octave) are played. It's easy to account for by computing the average sample rate played by the pattern. A larger number implies a higher pitch.</p>
           <p>The sample rate alone, however, cannot distinguish a bass instrument from percussion. Both instruments may be recorded at the same sample rate, but percussion will have higher frequencies in its sample data. To account for this the game calculates the dominant frequency in the sample data of each instrument.</p>
-          <center><div class="image"><img src="spectra.jpg" width="350" height="131"></div></center>
+          <center>
+            <div class="image" style="content: url(spectra.jpg); width: 700px; height: 262px">
+              <img src="spectra_half.jpg" width="350" height="131">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -204,7 +224,11 @@ custom.bltsize = (copy_h << BLTSIZE_H0_SHF) | width_words;</font></pre>
           <p class="heading"><font size="+2"><b>Pseudo 3D</b></font></p>
           <p>Fast rhythm games need responsive visuals and input. To achieve this I set a hard frame rate target of 50 FPS (matching the 50Hz PAL standard). I also wanted the game to have 3D graphics. A high frame rate, however, is very difficult to achieve in 3D games on the Amiga 500.</p>
           <p>The solution employs some <a href="http://www.extentofthejam.com/pseudo/">pseudo 3D</a> trickery, common to many games of the Amiga's era. Perspective is simulated by shifting scanlines to the left or right, with larger shifts nearer the camera. Scanline shifting was fast and commonly available in computers of the time. 3D calculations are done in fixed-point, and perspective divide is implemented with lookup tables to minimize CPU load.</p>
-          <center><div class="image"><img src="shifting.png" width="350" height="144"></div></center>
+          <center>
+            <div class="image" style="content: url(shifting.png); width: 700px; height: 288px">
+              <img src="shifting_half.png" width="350" height="144">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -238,7 +262,11 @@ custom.bltsize = (copy_h << BLTSIZE_H0_SHF) | width_words;</font></pre>
           </table>
           <p class="heading"><font size="+2"><b>Animating the tiles</b></font></p>
           <p>Visual tiles represent notes of the lead instrument. As the music proceeds the tiles approach in different lanes. These would be quite challenging to display as sprites, due to their number and varying scanline shifts. They would also be expensive to clear and redraw on every frame.</p>
-          <center><div class="image"><img src="bitmap.png" width="346" height="270"></div></center>
+          <center>
+            <div class="image" style="content: url(bitmap.png); width: 692px; height: 540px">
+              <img src="bitmap_half.png" width="346" height="270">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
@@ -277,7 +305,11 @@ custom.bltsize = (copy_h << BLTSIZE_H0_SHF) | width_words;</font></pre>
           <p>The final visual element is the ball. This graphic was inspired by the <a href="https://amiga.lychesis.net/special/ColorCycling/Boing.html">Boing Ball</a>, a famous early Amiga animated demo and Amiga's mascot. Its rotation animation is achieved by changing colors in the palette. The sprite bitmap does not change.</p>
           <p>In ModSurfer the ball is implemented with four sprites. Two 16x32 pixel 2-bitplane sprites combine horizontally to form a 32x32 ball. Two more sprites combine with these to make a 4-bitplane, 16-color "attached" 32x32 sprite. This large number of colors is necessary for the color cycling effect.</p>
           <p>The sprite bitmap is only changed to show different frames of rotation left/right. Rotation around the X axis (forwards) is implemented through color cycling, to save memory. During each frame the sprite palette is shifted, moving each color forwards by one place and wrapping the last one back to the beginning.</p>
-          <center><div class="image"><img src="balls.png" width="250" height="60"></div></center>
+          <center>
+            <div class="image" style="content: url(balls.png); width: 500px; height: 120px">
+              <img src="balls_half.png" width="250" height="60">
+            </div>
+          </center>
           <table cellspacing="0" cellpadding="0">
             <tr>
               <td class="vspace" height="10"></td>
