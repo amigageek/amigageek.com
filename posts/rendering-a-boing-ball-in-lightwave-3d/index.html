@@ -77,6 +77,7 @@
           </table>
           <p>I recently found myself in need of an Amiga-inspired avatar. The Boing Ball seemed an obvious choice. Made famous by a <a href="https://www.youtube.com/watch?v=YlAhRJjOhDg">1984 CES demo</a>, the Boing Ball set the scene for Amiga's dominance in real-time graphics and OS multitasking. Here's a short <a href="https://amiga.lychesis.net/artist/DaleLuck/Boing.html">deconstruction</a> of how the effect worked.</p>
           <p>Briefly revisiting the venerable Amiga ray tracer Imagine 3D, the nostalgia was strong. My younger self spent many hours modeling, texturing, and rendering scenes in Imagine. The user interface was not very intuitive, though. I decided to try something a little more modern.</p>
+          <a name="lightwave_3d"></a>
           <p class="heading"><font size="+2"><b>Lightwave 3D</b></font></p>
           <p>Newtek's Lightwave 3D was a ray tracing package originally shipped with their popular <a href="https://arstechnica.com/gadgets/2016/03/a-history-of-the-amiga-part-9-the-video-toaster/">Video Toaster</a> hardware. The Toaster was expensive and required a powerful Amiga, mostly limiting its use to professional users of the time. Emulation has made this tool much more accessible to retro enthusiasts.</p>
           <center>
@@ -114,6 +115,7 @@ jit_compiler = 1</font></pre>
           <p>The FS-UAE build must include JIT support. The Arch Linux package <a href="https://git.archlinux.org/svntogit/community.git/tree/trunk/PKGBUILD?h=packages/fs-uae">disables JIT</a>, which tripped me up. I chose to build FS-UAE from source instead. The binary download also includes JIT support.</p>
           <p>I installed the Lightwave package <b>LW50r_Incl.CDContent.lha</b> and downloaded the manual <b>Video.Toaster.4000_LW5-Manual.pdf</b>. Both of these can be found on the EAB FTP.</p>
           <p>Lightwave consists of two separate programs: Modeler and Layout. I started out in Modeler to create the Boing Ball mesh.</p>
+          <a name="modeler"></a>
           <p class="heading"><font size="+2"><b>Modeler</b></font></p>
           <center>
             <div class="image" style="content: url(modeler.png); width: 672px; height: 546px">
@@ -135,6 +137,7 @@ jit_compiler = 1</font></pre>
           <p>At first glance the Modeler seems a bit spartan. This is where all mesh editing is done and I expected to see a little more. However, the buttons along the top switch in different panels on the left. Several buttons also conceal pop-up windows. There's a lot more going on here.</p>
           <p>I clicked the button conveniently named Ball and drew out a square in the top and side views with Ctrl-Click-Drag. The Numeric button pops up a window to set the number of sides and vertical segments. I set these to 100 to get a reasonably spherical mesh. I could not find an option for non-polygonal spheres.</p>
           <p>Our brief stop by the Modeler is complete. The object can now be saved out for loading into the Layout program.</p>
+          <a name="layout"></a>
           <p class="heading"><font size="+2"><b>Layout</b></font></p>
           <center>
             <div class="image" style="content: url(layout.png); width: 672px; height: 546px">
@@ -210,6 +213,7 @@ jit_compiler = 1</font></pre>
               <td class="hspace2" width="20"></td>
             </tr>
           </table>
+          <a name="composition"></a>
           <p class="heading"><font size="+2"><b>Composition</b></font></p>
           <p>The Lightwave render consists of two files: 24-bit RGB and 8-bit alpha ILBM images. The alpha channel defines transparency in the color image. This would normally be used for compositing a foreground and background image, or to overlay a rendered animation onto video.</p>
           <p>In my case I wanted a 32-bit PNG with transparency to use on the web. I was unable to locate an Amiga program which could output this. Instead I cheated a little and used Imagemagick with the following command:</p>
