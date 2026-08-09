@@ -4,16 +4,22 @@
     <link>https://amigageek.com/</link>
     <description>Antiquated adventures of a nostalgic engineer</description>
     <item>
+      <title>Artwork</title>
+      <link>https://amigageek.com/artwork/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 UTC</pubDate>
+      <description>Pictures and animations created with Amiga software</description>
+    </item>
+    <item>
+      <title>SUSY</title>
+      <link>https://amigageek.com/susy/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 UTC</pubDate>
+      <description>A hardware audio synthesizer for the Amiga</description>
+    </item>
+    <item>
       <title>Website publishing on the Amiga</title>
       <link>https://amigageek.com/posts/website-publishing-on-the-amiga/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 UTC</pubDate>
       <description>This website is now created with Amiga software and is optimized for display in IBrowse at 640x480 or higher resolution.</description>
-    </item>
-    <item>
-      <title>Artwork</title>
-      <link>https://amigageek.com/artwork/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 UTC</pubDate>
-      <description>Pictures and animations created with Amiga software</description>
     </item>
     <item>
       <title>TabGroup.mcc</title>
